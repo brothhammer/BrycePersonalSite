@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Bryce Rothhammer</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="lib/fontello/css/fontello.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-container">
+    </header>
+    <main>
+        <div class="container">
+            <div class="lead">
+                <h1 class="lead__heading">Hello, I'm Bryce Rothhammer.</h1>
+                <h2> Thank you for visiting my site.</h2>
+                <Route exact path="/" component={Summary}/>
+                <div class="lead__sub">
+                    I am a full stack Javascript engineer professional with experience in mechanical and process design seeking a role as a software developer in Austin Texas.
+                    <p>
+                    While developing a new manufacturing process I solved the documentation issue using LabView to write to a MySql database. These problems showed me just how useful a developer can be, motivating my career transition. 
+                    </p>
+                    In a fully automated semiconductor facility I gained valuable skills in finding, organizing and drawing meaningful conclusions for executives. This required SQL queries development, excel spreadsheet automation and most importantly contextual understanding of the processes being evaluated.
+                    <p>
+                    My coding practices, and work habits are influenced by my prior experience in Mechanical Engineering, Lean Manufacturing and Product Development.
+                </p>
+                </div>
+
+                <div class="call-to-action">
+                    <a href="./assets/resume.pdf" target="_blank" class="btn btn--primary btn--lg">Get my resume</a>
+
+                    <div class="socials">
+                        <a class="socials__link" href="https://github.com/brothhammer" target="_blank">
+                            <i class="icon-github-circled"></i>
+                        </a>
+                        <a class="socials__link" href="mailto:rothhammer.b@gmail.com" target="_blank">
+                            <i class="icon-mail-alt"></i>
+                        </a>
+            
+                        <a class="socials__link" href="https://www.linkedin.com/in/bryce-rothhammer/" target="_blank">
+                            <i class="icon-linkedin-squared"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container project-container">
+            <h1>My Projects</h1>
+            <div class="project">
+                <div class="project__img-container">
+                    <img class="project__img" src="./assets/enduranceCalc.png" alt="Enduacnce Screenshot">
+                </div>
+                <div class="project__details">
+                    <h2 class="project__name">
+                        Endurance Nutrition Calculator
+                    </h2>
+                    <div class="skill-tags">
+                        <div class="skill-tag">Javascript</div>
+                        <div class="skill-tag">MySQL</div>
+                        <div class="skill-tag">Sequelize</div>
+                        <div class="skill-tag">Node.JS</div>
+                        <div class="skill-tag">CSS</div>
+                        <div class="skill-tag">Bootstrap</div>
+                        <div class="skill-tag">Charts.js</div>
+                    </div>
+                    <p>
+                        This nutrition calculator is targeted at endurance athletes to help them determine how many and what type of calories they should be consuming to properly recover from workouts. It uses a Node.js server to calculate proper calories and recomended macro nutrient intake based on the users activity type, intensity and duration. Results of these calculations are stored in a MySQL database along with the users personal traits. 
+                        <div>
+                            <a class="btn" href="https://enduranceathletecalculator.herokuapp.com/" target="_blank">View Project</a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__img-container">
+                    <img class="project__img" src="./assets/snapShot.png" alt="SnapShot Screenshot">
+                </div>
+                <div class="project__details">
+                    <h2 class="project__name">
+                        SnapShot
+                    </h2>
+                    <div class="skill-tags">
+                        <div class="skill-tag">Javascript</div>
+                        <div class="skill-tag">JQuery</div>
+                        <div class="skill-tag">Bootstrap</div>
+                        <div class="skill-tag">Google Maps API</div>
+                        <div class="skill-tag">Google Places API</div>
+                    </div>
+                    <p>
+                        This app provides a snapshot of the area entered by the user. It uses Google maps API, places API and geocode to return a traffic map centered on the address, streetview image and images from the surrounding city.
+                        <div>
+                            <a class="btn" href="https://brothhammer.github.io/Snapshot/" target="_blank">View Project</a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__img-container">
+                    <img class="project__img" src="./assets/mongoScraper.png" alt="SnapShot Screenshot">
+                </div>
+                <div class="project__details">
+                    <h2 class="project__name">
+                        Mongo NYT Scraper
+                    </h2>
+                    <div class="skill-tags">
+                        <div class="skill-tag">Javascript</div>
+                        <div class="skill-tag">MongoDB</div>
+                        <div class="skill-tag">Cheerio</div>
+                        <div class="skill-tag">Node.JS</div>
+                    </div>
+                    <p>
+                        This app is a simple webscaper of the New York Times website. It uses Node.js and Cheerio to pull the titles and a short description of each article. The user can then save and comment on articles of interest.
+                        <div>
+                            <a class="btn" href="https://mongoscraperbr.herokuapp.com/" target="_blank">View Project</a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="container">
+            
+            <div class='contact'>
+                <h2>Contact</h2>
+                <p class='contact__msg'>I am currently seeking a role in web development. If you're interested in working with me, please get in touch through <a href='mailto:rothhammer@gmail.com'>rothhammer.b@gmail.com</a>.
+            </div>
+        </div>
+    </main>
+    <footer class='footer'>
+        <h1 class='footer__name'>Bryce Rothhammer</h1>
+        <h2 class='footer__title'>Engineer</h2>
+        Copyright © Bryce Rothhammer
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
